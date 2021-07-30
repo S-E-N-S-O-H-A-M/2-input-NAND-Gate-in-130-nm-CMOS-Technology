@@ -1,0 +1,22 @@
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+xm1 net-_m1-pad1_ va vout net-_m1-pad1_ sky130_fd_pr__pfet_01v8 W=1u L=0.5u M=1 
+xm4 net-_m1-pad1_ vb vout net-_m1-pad1_ sky130_fd_pr__pfet_01v8 W=1u L=0.5u M=1
+xm2 vout va net-_m2-pad3_ gnd sky130_fd_pr__nfet_01v8 W=.42u L=.5u M=1
+xm3 net-_m2-pad3_ vb gnd gnd sky130_fd_pr__nfet_01v8 W=.42u L=.5u M=1
+v3 net-_m1-pad1_ gnd  dc 5
+* u2  vb plot_v1
+* u1  va plot_v1
+* u3  vout plot_v1
+v1  va gnd pulse(0 5 0 0 0 17m 33m)
+v2  vb gnd pulse(0 5 0 0 0 10m 20m)
+.tran 0.1e-03 60e-03 0e-03
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(vout) v(va)+12 v(vb)+6
+.endc 
+.end
