@@ -59,6 +59,4 @@
 <p>&gt;&gt;Contributor</p>
 <p><span style="white-space:pre;">&nbsp; &nbsp;&nbsp;</span>-Soham Sen, B.Tech (Electronics and Communication Engineering), Amity University Kolkata - sohamsen25420001@gmail.com</p>
 ----------------------------------------------------------------------------------------------------------------------------------------------
-<p>&gt;&gt;Acknowledgemnt</p>
-<p><span style="white-space:pre;">&nbsp; &nbsp;&nbsp;</span>-Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com</p>
-----------------------------------------------------------------------------------------------------------------------------------------------
+
